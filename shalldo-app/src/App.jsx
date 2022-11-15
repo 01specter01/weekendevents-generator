@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import "./App.css";
+import HomePage from "./views/HomePage";
 
 function App() {
     return (
@@ -8,6 +7,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/ContendPage" element={<ContentPage />} />
                 </Routes>
             </BrowserRouter>
         </div>
